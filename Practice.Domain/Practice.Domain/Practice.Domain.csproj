@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<DefaultItemExcludes>$(DefaultItemExcludes);Practicer.Domain\**\*.meta</DefaultItemExcludes>
+	<DefaultItemExcludes>$(DefaultItemExcludes);Practicer.Domain\**\*.asmdef</DefaultItemExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Common.Basic">
+      <HintPath>..\..\..\Common.Basic.Tests\Common.Basic.Tests\Common.Basic\bin\Debug\net6.0\Common.Basic.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
